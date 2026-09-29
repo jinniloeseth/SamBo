@@ -1,9 +1,13 @@
 namespace backend.Models
 {
-    public class Rules
+    public class RuleCategory
     {
         public int Id { get; set; }
-        public List<Rule> Regler { get; set; } = new();
         public string? Category { get; set; }
+
+        public int LocationId { get; set; }
+        public Location? Location { get; set; }
+
+        public List<Rule> Rules { get; set; } = new();
     }
 }

@@ -9,6 +9,9 @@ namespace backend.Models
         public string RoomNumber { get; set; } = string.Empty;
         public UserRole Role { get; set; } = UserRole.Student;
 
+        public int LocationId { get; set; }
+        public Location? Location { get; set; }
+
         public UserSettings? Settings { get; set; }
     }
 

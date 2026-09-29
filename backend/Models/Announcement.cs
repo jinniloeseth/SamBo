@@ -7,6 +7,10 @@ namespace backend.Models
         public DateTime Date { get; set; }
         public string Text { get; set; } = string.Empty;
         public bool IsPinned { get; set; } = false;
+
+        public int LocationId { get; set; }
+        public Location? Location { get; set; }
+
         public int CreatedByUserId { get; set; }
     }
 }

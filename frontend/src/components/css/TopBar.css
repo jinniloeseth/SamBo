@@ -1,0 +1,18 @@
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  background-color: #f5e0cc; /* fargen fra mockupen din */
+}
+
+.top-bar-logo {
+  height: 56px; /* var 28px, øk til ønsket størrelse */
+  width: auto;
+}
+
+.top-bar-location {
+  font-size: 16px;
+  font-weight: 500;
+  color: #1a1a1a;
+}

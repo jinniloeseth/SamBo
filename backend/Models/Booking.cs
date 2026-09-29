@@ -6,6 +6,10 @@ namespace backend.Models
         public string RoomNumber { get; set; } = string.Empty;
         public DateTime BookingStart { get; set; }
         public DateTime BookingEnd { get; set; }
-        public int CreatedByUsedId { get; set; }
+
+        public int LocationId { get; set; }
+        public Location? Location { get; set; }
+
+        public int CreatedByUserId { get; set; }
     }
 }
