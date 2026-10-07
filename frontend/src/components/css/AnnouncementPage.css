@@ -1,0 +1,21 @@
+.announcement-card {
+  background-color: #f7cba4;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 12px;
+}
+
+.announcement-card.pinned {
+  background-color: #e8703a;
+  color: white;
+}
+
+.announcement-header {
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.announcement-text {
+  font-size: 14px;
+  line-height: 1.4;
+}
