@@ -1,5 +1,5 @@
-import sammenLogo from "../assets/icons/sammen_logo.png";
-import "./css/TopBar.css";
+import sammenLogo from "../../assets/bottombar_icons/sammen_logo.png";
+import "../css/TopBar.css";
 
 // Mock-verdi til vi kobler på ekte backend-data
 const currentLocation = "Brann stadion";

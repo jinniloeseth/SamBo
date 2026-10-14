@@ -6,8 +6,9 @@ namespace backend.Models
         public DateTime Date { get; set; }
         public string Text { get; set; } = string.Empty;
         public bool IsPinned { get; set; } = false;
+        public AnnouncementCategory Category { get; set; } = AnnouncementCategory.General;
 
         public int CreatedByUserId { get; set; }
-        public User? CreatedByUser { get; set; } // navigasjon, så du kan hente CreatedByUser.RoomNumber
+        public User? CreatedByUser { get; set; }
     }
 }

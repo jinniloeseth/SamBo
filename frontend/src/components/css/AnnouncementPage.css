@@ -1,21 +1,45 @@
+.page {
+  padding: 16px;
+}
+
+.page-subtitle {
+  font-size: 13px;
+  color: #777777;
+  margin-top: -8px;
+  margin-bottom: 16px;
+}
+
 .announcement-card {
   background-color: #f7cba4;
   border-radius: 12px;
   padding: 16px;
   margin-bottom: 12px;
-}
-
-.announcement-card.pinned {
-  background-color: #e8703a;
-  color: white;
+  margin-left: 4px;
+  margin-right: 4px;
 }
 
 .announcement-header {
   font-weight: 500;
   margin-bottom: 8px;
+  font-size: 14px;
 }
 
 .announcement-text {
-  font-size: 14px;
+  font-size: 13px;
   line-height: 1.4;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.filter-dropdown {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 6px 10px;
+  font-size: 13px;
+  background-color: white;
 }

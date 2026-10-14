@@ -1,11 +1,35 @@
-import mockAnnouncements from "../../mockData/announcements";
+import { useState } from "react";
+import mockAnnouncements from "../../mockData/announcements.js";
 import "../css/AnnouncementPage.css";
 
 function AnnouncementPage() {
+  const [selectedCategory, setSelectedCategory] = useState("all");
+
+  const filteredAnnouncements = mockAnnouncements.filter((announcement) => {
+    if (selectedCategory === "all") return true;
+    if (selectedCategory === "pinned") return announcement.isPinned;
+    return announcement.category === selectedCategory;
+  });
+
   return (
     <div className="page">
-      <h1>Kunngjøringer</h1>
-      {mockAnnouncements.map((announcement) => {
+      <div className="page-header">
+        <h3>Kunngjøringer</h3>
+        <select
+          className="filter-dropdown"
+          value={selectedCategory}
+          onChange={(e) => setSelectedCategory(e.target.value)}
+        >
+          <option value="all">Alle</option>
+          <option value="pinned">Festet</option>
+          <option value="General">Generelt</option>
+          <option value="Maintenance">Vedlikehold</option>
+          <option value="Social">Sosialt</option>
+          <option value="Important">Viktig</option>
+        </select>
+      </div>
+
+      {filteredAnnouncements.map((announcement) => {
         const sender =
           announcement.createdByUser.role === "Admin"
             ? "Admin"

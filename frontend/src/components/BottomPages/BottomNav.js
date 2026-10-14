@@ -1,8 +1,8 @@
 import { NavLink } from "react-router-dom";
-import homeIcon from "../../assets/icons/home_icon.png";
-import announcementIcon from "../../assets/icons/announcement_icon.png";
-import appwashIcon from "../../assets/icons/washingmachine_icon.png";
-import settingsIcon from "../../assets/icons/settings_icon.png";
+import homeIcon from "../../assets/bottombar_icons/home_icon.png";
+import announcementIcon from "../../assets/bottombar_icons/announcement_icon.png";
+import appwashIcon from "../../assets/bottombar_icons/washingmachine_icon.png";
+import settingsIcon from "../../assets/bottombar_icons/settings_icon.png";
 import "../css/BottomNav.css";
 
 const navItems = [
